@@ -1,0 +1,25 @@
+#!/bin/bash
+
+echo "Entrer valeur N"
+read n
+echo "Entrer valeur M"
+read m
+echo "Entrer nom de fichier"
+read fichier
+
+echo "$n" > $fichier
+echo "$m" >> $fichier
+
+if [ $n -gt $m ]
+then
+        echo "Valeur N est plus que M"
+        echo "Valeur N : $n , Valeur M : $m"
+elif [ $n -eq $m ]
+then
+        echo "Valeur N egale M"
+        echo "Valeur M : $m, Valeur N : $m"
+else
+        echo "Valeur M est plus que N"
+        echo "Valeur : $m, Valeur N : $n"
+fi
+Modification
